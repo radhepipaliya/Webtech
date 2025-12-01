@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+
+<body>
+    <center>
+        <h1><mark>Student Registration Form</mark></h1>
+    </center>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <td><label for="">First Name:</label></td>
+                    <td><input type="text" name="FirstName" id="FirstName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Last Name:</label></td>
+                    <td><input type="text" name="LastName" id="LastName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email:</label></td>
+                    <td><input type="text" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Phone Number:</label></td>
+                    <td><input type="number" name="Phnumber" id="phnumber" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Date of Birth</label></td>
+                    <td><input type="date" name="bod" id="bod" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender:</label></td>
+                    <td><input type="radio" name="gender" id="" required>Male</td>
+                    <td><input type="radio" name="gender" id="">Female</td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+            <table>
+                <tr>
+                    <td><label for="">Select course</label></td>
+                    <td><select name="course" id="course" required>
+                            <option value="" disabled selected>--selected a course</option>
+                            <option value="Java Full Stack">Java Full Stack</option>
+                            <option value="Python Full Stack">Python Full Stack</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="">Skills:</label></td>
+                    <td>
+                        <input type="text" list="Skills" name="skills" required placeholder="Select or type a skills">
+                        <datalist id="states">
+                            <option value="Java">Java</option>
+                            <option value="Html">Html</option>
+                            <option value="css">Css</option>
+                            <option value="javaScript">javaScript</option>
+                            <option value="python">python</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Address</td>
+                    <td><textarea name="Address" id="Address" rows="5"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Login Credentials</legend>
+            <table>
+                <tr>
+                    <td><label for="">UserName:</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password:</label></td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Confirm Password:</label></td>
+                    <td><input type="password"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Declaration</legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id=""> I agreed to the Terms & Condition
+                    </td>
+                    <tr>
+                        <td><input type="submit" value="Register">
+                        <input type="reset" value="Reset"></td>
+                    </tr>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Task</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Job Application Form</legend>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="">First Name:</label></td>
+                    <td><input type="text" name="FirstName" id="FirstName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Last Name:</label></td>
+                    <td><input type="text" name="LastName" id="LastName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email:</label></td>
+                    <td><input type="text" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Phone Number:</label></td>
+                    <td><input type="number" name="Phnumber" id="phnumber" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Date of Birth</label></td>
+                    <td><input type="date" name="bod" id="bod" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender:</label></td>
+                    <td><input type="radio" name="gender" id="" required>Male</td>
+                    <td><input type="radio" name="gender" id="">Female</td>
+                </tr>
+                <tr>
+                    <td><label for="">Address:</label></td>
+                    <td><textarea name="Address" id="Address" rows="5" required ></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="">City:</label></td>
+                    <td>
+                        <input type="text" list="states" name="state" required >
+
+                        <datalist id="states">
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Surat">Surat</option>
+                            <option value="Rajkot">Rajkot</option>
+                            <option value="junagard">junagard</option>
+
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">State:</label></td>
+                    <td>
+                        <input type="text" list="states" name="state" required >
+
+                        <datalist id="states">
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Rajastan">Rajastan</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Jambu & kashmir">Jambu & kashmir</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Pincode:</label></td>
+                    <td><input type="number" minlength="6" maxlength="6" required ></td>
+                </tr>
+                <tr>
+                    <td><label for="">Postion Applied For:</label></td>
+                    <td><input type="text" required ></td>
+                </tr>
+                <tr>
+                    <td><label for="">upload Resume:</label></td>
+                    <td><input type="file" required ></td>
+                </tr>
+                <tr>
+                    <td><label for="">LinkedIn Profile:</label></td>
+                    <td><input type="url" required ></td>
+                </tr>
+                <tr>
+                    <td><label for="">Avaliable Start Date:</label></td>
+                    <td><input type="date" required ></td>
+                </tr>
+                <tr>
+                    <td><label for="">Excepted Salary:</label></td>
+                    <td><input type="number" required ></td>
+                </tr>
+                <tr>
+                    <td><label for="">Willing to Relocate:</label></td>
+                    <td><select name="Relocate" id="Relocate" required >
+                        <option value="yes">Yes</option>
+                        <option value="yes">No</option>
+                    </select></td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input type="submit" value="submit yor Application">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
