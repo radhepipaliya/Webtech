@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p{
+            color:red;
+        } */
+        p::fist-letter{
+            font-size:30px;
+            color: blue;
+        }
+        /* #para2::first-line{
+            color: red;
+        } */
+        #para2:after{
+            content:"End";
+            color:blue;
+        }
+        #para2::before{
+            content: "start";
+            color: green;
+            font-size:20px;
+        }
+        li{
+            color:chocolate;
+        }
+        li::marker{
+            color: blue;
+        }
+        #para3{
+            color:darkblue;
+        }
+        #para3::selection{
+            color: white;
+            background-color: black;
+        }
+        input::placeholder{
+            color:brown;
+        }
+        input{
+            caret-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseduo-Element Selector</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis odio possimus vero iste eligendi. Soluta ipsum pariatur consequatur quam cumque nemo. Ut eaque cum animi sunt quibusdam et?</p>
+    <p id="para2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem excepturi quos molestias nulla dignissimos nostrum dolorem unde, tempore temporibus quo deleniti, reiciendis vitae minima, neque minus praesentium quae id maxime.
+        Pariatur accusamus quidem possimus doloribus delectus! Porro repudiandae voluptatibus nam eum unde incidunt assumenda ratione tempora delectus odio doloribus praesentium est ipsa possimus sint quaerat, ipsam debitis! Mollitia, dolorem temporibus.
+        Natus voluptatem itaque architecto eaque voluptate quisquam dicta, voluptas dolorem modi sint odio. Hic sint, nemo consequuntur recusandae nobis possimus perspiciatis expedita! Eligendi quidem numquam rerum iusto amet, maiores reprehenderit?
+        Alias accusantium iusto et animi dolores eum ipsa fuga deleniti nostrum deserunt veritatis officia magni in quasi, unde nobis! Impedit voluptates modi at sit ullam in voluptatibus laudantium autem adipisci.
+        Magni similique laboriosam voluptate id excepturi at odit voluptas quo atque. Ab perferendis asperiores odio soluta nam a maxime dolor earum recusandae. Error quos iusto natus nisi fugiat dolorem mollitia!
+        Deleniti, nisi assumenda architecto quasi minima nam placeat quod error aperiam? Praesentium vitae consequatur qui amet placeat quam exercitationem impedit quisquam sint ipsam, saepe iure voluptatem non? Dicta, aliquid eaque?
+        Cum, id minus necessitatibus doloribus voluptas veniam sit molestiae adipisci non at amet alias quos. Vel asperiores unde error eos, ipsa iusto vero. Doloribus pariatur cumque reiciendis earum. Quasi, neque.
+        Perspiciatis aliquam quisquam dicta quia harum, laboriosam omnis? Nobis maiores officia quod, dolorum doloremque mollitia recusandae delectus eveniet ad voluptatum laudantium ipsum odit eaque rem aliquid fugiat molestias sed soluta.
+        Sunt, nam eius. Odit, fuga placeat, laborum quod debitis nemo facere culpa iure non ratione adipisci nulla velit laudantium. Quae ipsam quidem voluptatem tenetur autem sequi saepe obcaecati ut et!
+        Earum laboriosam aspernatur quibusdam at quae pariatur, hic quam architecto perferendis! Consectetur totam provident ratione incidunt perferendis blanditiis, quod vel doloribus nesciunt laborum consequuntur quia, fugiat corporis voluptate optio enim.
+        Voluptatibus rem officia perspiciatis itaque, voluptatum porro beatae quidem earum ab ea nemo? Autem molestias quasi, quaerat odio accusamus sapiente temporibus neque architecto magni rerum commodi officia enim, ducimus itaque?
+        Consequatur neque repudiandae vitae, earum autem in obcaecati suscipit iusto harum quisquam? Impedit, deserunt ipsum? Nemo aspernatur quibusdam tenetur sint maxime modi delectus. Voluptatum commodi eveniet distinctio! Sapiente, est cupiditate!
+        Officia mollitia minima tenetur impedit delectus? Veniam fugit voluptate vel magnam natus pariatur porro suscipit esse, tempora quaerat repudiandae necessitatibus beatae quibusdam illo repellat iusto. Et quod tenetur neque voluptate?
+        Est, sed qui praesentium nostrum asperiores distinctio quod perspiciatis consectetur impedit! Velit quam tempore, sapiente doloremque nisi nostrum nihil perspiciatis dolorem unde voluptas, ea officia, aperiam ducimus maiores harum voluptatem?
+        Ipsa doloribus rem obcaecati eum cum impedit aperiam. Obcaecati debitis eaque iste nesciunt, illum esse corrupti earum quidem, voluptatibus ex consectetur sint temporibus officiis ab culpa inventore similique hic natus.
+    </p>
+    <hr/>
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+    <hr/>
+    <h2>Selection</h2>
+    <p id="para3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores autem enim natus atque error saepe minus alias consectetur doloremque laboriosam inventore, repellendus omnis, accusamus harum officiis deleniti dolor, reiciendis quo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad impedit earum rem est vero alias aperiam labore, delectus ea perspiciatis nulla ipsam, eligendi nostrum repudiandae voluptatem ab dignissimos. Molestias, quae?
+        Aperiam incidunt perferendis maxime dolorem corporis repudiandae saepe nam. Iste quibusdam ex repellat numquam minima sint debitis minus illo voluptatem. Omnis natus recusandae amet laudantium deleniti quam minima voluptates numquam?
+    </p>
+    <hr/>
+    <h2>Placeholder</h2>
+    <input type="text" placeholder="Hello">
+</body>
+</html>
