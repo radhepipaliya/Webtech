@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 2px solid red;
+            border-radius: 50%;
+            margin: 50px auto;
+            text-align: center;
+            line-height: 300px;
+        }
+        .bx{
+            width: 300px;
+            height: 300px;
+            border: 2px solid red;
+            margin: 50px auto;
+            text-align: center;
+            line-height: 300px;
+        }
+
+        #box1 {
+            background-image: radial-gradient(red, blue, yellow);
+        }
+
+        #box2 {
+            background-image: radial-gradient(red 10%, blue 10% 20%, yellow 20% 30%, green 30% 80%);
+        }
+
+        #box3 {
+            background-image: conic-gradient(red 0deg 120deg, yellow 120deg);
+        }
+        #box4{
+            background-image: conic-gradient(black  0deg 45deg, red  46deg 180deg  , green 181deg 314deg , black 315deg 360deg );
+        }
+    </style>
+</head>
+
+<body>
+    <h1>1.Radial gradient </h1>
+    <div class="box" id="box1">box-1</div>
+    <div class="box" id="box2">box-2</div>
+    <div class="box" id="box3">box-3</div>
+    <div class="bx" id="box4">box-4</div>
+    <div class="box" id="box5">box-5</div>
+    <div class="box" id="box6">box-6</div>
+
+</body>
+
+</html>
