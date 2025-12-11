@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 600px;
+            height: 500px;
+            position: relative;
+            border: 2px solid gray;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            color: white;
+            text-align: center;
+        }
+        #box1{
+            background-color: red;
+            position: absolute;
+        }
+        #box2{
+            background-color: blue;
+            position:absolute;
+            right: 0px;
+        }
+        #box3{
+            background-color: green;
+            position: absolute;
+            /* left: 100px;
+            top: 100px; */
+            bottom: 0px;
+            right: 0px;
+        }
+        #box4{
+            background-color: yellow;
+            position: absolute;
+            bottom: 0px;
+        }
+        #box5{
+            background-color: black;
+            line-height: 100px;
+            position: absolute;
+            border-radius: 50%;
+            left: calc(50% - 50px);
+            top: calc(50% - 50px);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Aboslute postion in Css</h1>
+    <div class="parent">
+        <div class="box" id="box1">Box-1</div>
+        <div class="box" id="box2">Box-2</div>
+        <div class="box" id="box3">Box-3</div>
+        <div class="box" id="box4">Box-4</div>
+        <div class="box" id="box5">Box-5</div>
+    </div>
+</body>
+</html>

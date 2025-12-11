@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+
+        .banner {
+            width: 1471px;
+            height: 220px;
+            padding: 25px;
+            background-image: url(../../asset/marvelbanner.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: white;
+        }
+
+        .card {
+            display: inline-block;
+            height: 292px;
+            width: 195px;
+            margin: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .box {
+            width: 1000px;
+            padding: 50px;
+            margin: 30px auto;
+        }
+
+        #card1 {
+            background-image: url(../../asset/AvangerSecretWar.jpg);
+            background-position: center;
+            background-size: cover;
+            background-color: rgba(250, 250, 250, 0.90);
+        }
+
+        #card2 {
+            background-image: url(../../asset/Blade.jpg);
+            background-position: center;
+            background-size: cover;
+            background-color: rgba(250, 250, 250, 0.90);
+
+        }
+
+        #card3 {
+            background-image: url(../../asset/avengersdoomsday_lob_crd_01.jpg);
+            background-position: center;
+            background-size: cover;
+            background-color: rgba(250, 250, 250, 0.90);
+
+        }
+
+        #card4 {
+            background-image: url(../../asset/spidermanbrandnewday_lob_crd_01.jpg);
+            background-position: center;
+            background-size: cover;
+            background-color: rgba(250, 250, 250, 0.90);
+        }
+
+        #card5 {
+            background-image: url(../../asset/thefantasticfourfirststeps_lob_crd_03.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #card6 {
+            background-image: url(../../asset/thenewavengers_lob_crd_01.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #card7 {
+            background-image: url(../../asset/captainamericabravenewworld_lob_crd_05.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #card8 {
+            background-image: url(../../asset/deadpoolandwolverine_lob_crd_03.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        h1 {
+            font-weight: 900px;
+            font-family: "Science Gothic", sans-serif;
+        }
+
+        .card:hover {
+            background-blend-mode: hard-light;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.726);
+        }
+
+        .card:hover .para {
+            color: white;
+        }
+
+        .para{
+            color: transparent;
+            font-family: "Science Gothic", sans-serif;
+        }
+
+        .wait,
+        .pend,
+        .watch {
+            color: transparent;
+            font-family: "Science Gothic", sans-serif;
+        }
+
+        .card:hover .wait,
+        .card:hover .pend,
+        .card:hover .watch {
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Marvel Movies</h1>
+    </div>
+    <div class="box">
+        <div class="card" id="card1">
+            <div class="content">
+                <p class="para">
+                    <b><big>Release On:</big></b>
+                </p>
+                <p class="para">DEC 17, 2027</p>
+            </div>
+            <div class="wait">
+                <p>WAITING</p>
+            </div>
+        </div>
+        <div class="card" id="card2">
+            <div class="content">
+                <p class="para">
+                    <b><big>Release On:</big></b>
+                </p>
+                <p class="para">DEC 17, 2027</p>
+                <div class="wait">
+                    <p>WAITING</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card3">
+            <div class="content">
+                <p class="para">
+                    <b><big>Release On:</big></b>
+                </p>
+                <p class="para">DEC 18, 2026</p>
+                <div class="wait">
+                    <p>WAITING</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="card" id="card4">
+            <div class="content">
+                <p class="para">
+                    <b><big>Release On:</big></b>
+                </p>
+                <p class="para">JUL 31, 2026</p>
+            </div>
+            <div class="wait">
+                <p>WAITING</p>
+            </div>
+        </div>
+        <div class="card" id="card5">
+            <div class="content">
+                <p class="para">
+                    <b><big>Release On:</big></b>
+                </p>
+                <p class="para">2025</p>
+            </div>
+            <div class="pend">
+                <p>PENDING</p>
+            </div>
+        </div>
+        <div class="card" id="card6">
+            <div class="content">
+                <p class="para">
+                    <b><big>Release On:</big></b>
+                </p>
+                <p class="para">2025</p>
+                <div class="watch">
+                    <p>WATCHED</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="card" id="card7">
+            <div class="content">
+                <p class="para">
+                    <b><big>Release On:</big></b>
+                </p>
+                <p class="para">2025</p>
+            </div>
+            <div class="watch">
+                <p>WATCHED</p>
+            </div>
+        </div>
+        <div class="card" id="card8">
+            <div class="content">
+                <p class="para">
+                    <b><big>Release On:</big></b>
+                </p>
+                <p class="para">2024</p>
+            </div>
+            <div class="watch">
+                <p>WATCHED</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
