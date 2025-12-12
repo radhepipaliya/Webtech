@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .cointainer {
+            /* border: 2px solid red; */
+            width: 1320px;
+            height: 244px;
+            position: relative;
+            margin: 10px auto;
+        }
+
+        .box {
+            /* border: 2px solid greenyellow; */
+
+            border-radius: 9px;
+            height: 220px;
+            position: relative;
+            margin: 10px auto;
+            box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+            background-image: url(../../asset/starbucks.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .itemcon {
+            /* border: 2px solid blue; */
+            position: absolute;
+            width: 152px;
+            height: 225px;
+        }
+
+        .item {
+            /* border: 2px solid blue; */
+            height: 209px;
+            width: 100px;
+            margin-top: 9px;
+            background-image: url(../../asset/coofe.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .cardcontent {
+            /* border: 2px solid black; */
+            position: absolute;
+            padding: 10px;
+            width: 760px;
+            height: 194px;
+            left: 146px;
+            z-index: 1;
+        }
+
+        .cardcontent>p {
+            padding: 10px;
+            color: white;
+        }
+
+        .btn {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            width: 200px;
+            height: 49px;
+            background: green;
+            color: white;
+            border-radius: 30px;
+        }
+
+        .term p {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: white;
+        }
+        .round .box{
+            border-radius: 50%;
+            background-image: none;
+            width: 55px;
+            height: 55px;
+            text-align: center;
+            line-height: 55px;
+            font-size: 50px;
+            color: green;
+        }
+        #box1{
+            position: absolute;
+            left: 75px;
+            top: 98px;
+            background-color:  white;
+        }
+        #box2{
+            position: absolute;
+            right: 75px;
+            top: 98px;
+            background-color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cointainer">
+        <div class="box">
+            <div class="itemcon">
+                <div class="item"></div>
+            </div>
+            <div class="cardcontent">
+                <p>Starbucks</p>
+                <p>Bevarage Subscription</p>
+                <p>Starbucks Subscription is Back! Sip your Favourites For Less. Tap for details. T&C Apply.</p>
+            </div>
+            <button class="btn">Know More</button>
+            <div class="term">
+                <p>*T&C Apply</p>
+            </div>
+        </div>
+    </div>
+    <div class="round">
+        <div class="box" id="box1">&larr;</div>
+        <div class="box" id="box2">&rarr;</div>
+    </div>
+
+</body>
+
+</html>
