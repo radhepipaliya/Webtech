@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        section {
+            width: 100vm;
+            height: 100vh;
+            background-color: #0B0F19;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            border: 2px solid blue;
+            margin: 10px auto;
+            width: 1242px;
+            height: 288px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        span {
+            color: transparent;
+            background-image: linear-gradient(to right, #823AEA, #483ACC);
+            background-clip: text;
+        }
+
+        p {
+            color: #9EA2AE;
+        }
+
+        #container2 {
+            width: 1460px;
+            height: 652px;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+        .card {
+            border: 1px solid red;
+            height: 489px;
+            width: 417px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            background-color: #15132C;
+        }
+
+        .img {
+            height: 252px;
+            width: 417px;
+        }
+
+        #card1 .img {
+            background-image: url(https://estatic-infotech.com/wp-content/themes/estatic-theme/assets/images/healthcare-serve.webp);
+            border-radius: 16PX;
+        }
+        #card2 .img {
+            background-image: url(https://estatic-infotech.com/wp-content/themes/estatic-theme/assets/images/education-serve.webp);
+            border-radius: 16PX;
+        }
+        #card3 .img {
+            background-image: url(https://estatic-infotech.com/wp-content/themes/estatic-theme/assets/images/socialnetworking-serve.webp);
+            border-radius: 16PX;
+        }
+        .btn{
+            background-color: #713AE1;
+            color: white;
+               height: 49px;
+    width: 312px;
+            position: absolute;
+            top: 235px;
+            border-radius: 16px ;
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="heading">
+                <h1><span>Next-Gen Web & Mobile App</span> Solutions Across Industries</h1>
+            </div>
+            <div class="content">
+                <p>At Estatic Infotech, we don’t just build apps—we engineer transformative digital experiences. As a
+                    top web and mobile app development company in India, we deliver innovative, scalable, and secure
+                    solutions that integrate seamlessly with your legacy systems, empowering businesses to thrive in a
+                    fast-evolving digital world.</p>
+            </div>
+        </div>
+        <div class="container" id="container2">
+            <div class="card" id="card1">
+                <div class="img"></div>
+                <button class="btn">healthcare</button>
+                <P>Reimagine patient care with HIPAA-compliant, connected platforms. From telemedicine apps to
+                    health trackers and smart patient portals, we integrate modern innovation with legacy
+                    systems to drive efficiency, security, and better outcomes.</P>
+            </div>
+            <div class="card" id="card2">
+                <div class="img"></div>
+                <button class="btn">Education</button>
+                <P>Transform learning with immersive e-learning platforms and virtual classrooms. Our solutions
+                            fuse innovation and intuitive design to make education more interactive, engaging, and
+                            accessible.</P>
+            </div>
+            <div class="card" id="card3">
+                <div class="img"></div>
+                <button class="btn">Social Networking</button>
+                <P>Simplify journeys with smart travel apps, booking engines, and itinerary planners. We deliver
+                            integrated solutions that provide real-time updates, frictionless navigation, and
+                            personalized experiences for global travelers.</P>
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

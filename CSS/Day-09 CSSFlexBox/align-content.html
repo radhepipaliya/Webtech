@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .parent{
+            width: 600px;
+            height: 400px;
+            background-color: tomato;
+            display: flex;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+            border: 1px solid #fff;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #parent1{
+            flex-wrap: wrap;
+            /* align-content: flex-start;
+            align-content: flex-end; */
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h1>align-content:</h1>
+    <div class="parent" id="parent1">
+      <div class="child" id="child1">Child-1</div>
+      <div class="child" id="child2">Child-2</div>
+      <div class="child" id="child3">Child-3</div>
+      <div class="child" id="child4">Child-4</div>
+      <div class="child" id="child5">Child-5</div>
+      <div class="child" id="child6">Child-6</div>
+      <div class="child" id="child7">Child-7</div>
+      <div class="child" id="child8">Child-8</div>
+      <div class="child" id="child9">Child-9</div>
+      <div class="child" id="child10">Child-10</div>
+    </div>
+</body>
+</html>
