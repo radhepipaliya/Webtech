@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: "BBH Bartle", sans-serif;
+
+        }
+
+        .parent {
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            display: grid;
+            /* border: 2px solid white; */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+
+        .child-2 {
+            width: 100%;
+            height: 100%;
+            /* border: 3px solid white; */
+            display: grid;
+            padding: 10px;
+            grid-gap: 10px;
+            grid-template-areas: "mou mou oce oce"
+                "mou mou oce oce"
+                "wat is hi be"
+                "wat is for for"
+                "wat rai for for"
+                "des vol gal lan";
+        }
+
+        .grid-items {
+            background-color: wheat;
+            color: white;
+            padding: 20px;
+            /* border: 1px solid black; */
+            justify-content: center;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            letter-spacing: 5px;
+        }
+
+        #grid-item1 {
+            grid-area: mou;
+            background-image: url(../../asset/nature/walbrzych-7091842_1280.jpg);
+        }
+
+        #grid-item2 {
+            grid-area: oce;
+            background-image: url(../../asset/nature/ocean-1844831_1280.jpg);
+        }
+
+        #grid-item3 {
+            grid-area: wat;
+            background-image: url(../../asset/nature/pexels-sebastian-palomino-933481-1875480.jpg);
+        }
+
+        #grid-item4 {
+            grid-area: is;
+            background-image: url(../../asset/nature/pexels-ollivves-1316897.jpg);
+        }
+
+        #grid-item5 {
+            grid-area: hi;
+            background-image: url(../../asset/nature/pexels-marek-piwnicki-3907296-30359248.jpg);
+        }
+
+        #grid-item6 {
+            grid-area: be;
+            background-image: url(../../asset/nature/beach.jpg);
+        }
+
+        #grid-item7 {
+            grid-area: rai;
+            background-image: url(../../asset/nature/rain.jpg);
+        }
+
+        #grid-item8 {
+            grid-area: for;
+            background-image: url(../../asset/nature/forest.jpg);
+        }
+
+        #grid-item9 {
+            grid-area: des;
+            background-image: url(../../asset/nature/desert.jpg);
+        }
+
+        #grid-item10 {
+            grid-area: vol;
+            background-image: url(../../asset/nature/valcano.jpg);
+
+        }
+
+        #grid-item11 {
+            grid-area: gal;
+            background-image: url(../../asset/nature/Iceberge.jpg);
+        }
+
+        #grid-item12 {
+            grid-area: lan;
+            background-image: url(../../asset/nature/land.jpg);
+        }
+        .child-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            padding: 20px;
+            color: white;
+            border: 1px solid white;
+            height: 300px;
+            border-bottom-right-radius: 20px;
+            width: 95%;
+            box-shadow: rgba(242, 241, 241, 1) 5px 5px 2.6px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        li{
+            list-style: none;
+        }
+        li::before{
+            content: "🍁";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child-1">
+            <div class="box">
+                <h1>Nature's Grallery</h1>
+                <ul>
+                    <li>Everything in this world is Beautiful</li>
+                    <li>You just need to look closer</li>
+                    <li>Capture the moment</li>
+                </ul>
+            </div>
+        </div>
+        <div class="child-2">
+            <div class="grid-items" id="grid-item1">Mountains</div>
+            <div class="grid-items" id="grid-item2">Oceans</div>
+            <div class="grid-items" id="grid-item3">WaterFalls</div>
+            <div class="grid-items" id="grid-item4">Island</div>
+            <div class="grid-items" id="grid-item5">Hills</div>
+            <div class="grid-items" id="grid-item6">Beach</div>
+            <div class="grid-items" id="grid-item7">Rain</div>
+            <div class="grid-items" id="grid-item8">Forest</div>
+            <div class="grid-items" id="grid-item9">Desert</div>
+            <div class="grid-items" id="grid-item10">Volcano</div>
+            <div class="grid-items" id="grid-item11">Iceberge</div>
+            <div class="grid-items" id="grid-item12">Land</div>
+        </div>
+    </div>
+</body>
+
+</html>
