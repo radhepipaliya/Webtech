@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .parent{
+            width: 100%;
+            padding: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .box{
+            width: 852px;
+            height: 1308px;
+            background-color: plum;
+            border: 1px solid black;
+            margin: 20px 20px;
+            background-size: cover;
+            background-position: center;
+            transition: all 0.5s linear;
+            transform-origin: 0px 0px;
+        }
+        #box1{
+                background-image: url(https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_568,c_scale,dpr_1.5/jackets/9781408855652.jpg);
+                position: absolute;
+
+        }
+       #box1:hover{
+                transform: rotateY(-120deg);
+       }
+       #box2{
+        background-image: url(../../asset/censor.png);
+       }
+    </style>
+</head>
+<body>
+        
+    <h1>Css - Transition property</h1>
+    <div class="parent">
+        <div class="box" id="box1">Skew-x</div>
+        <div class="box" id="box2">Hello</div>
+    </div>
+</body>
+</html>

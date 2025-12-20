@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 100%;
+            height: 300px;
+            padding: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: plum;
+            border: 1px solid black;
+            margin:30px;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 20px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 8px 15px rgba(255, 0, 0, 0.211);
+            cursor: pointer;
+        }
+        #box1:hover{
+            transform: rotate(45deg) scale(2);
+            box-shadow: 0 8px 15px rgba(255, 0, 0);
+
+        }
+        #box2:hover{
+            transform: rotate(45deg)  scaleX(1.5);
+            box-shadow: 0 8px 15px rgba(255, 0, 0);
+        }
+        #box3:hover{
+            transform: rotate(45deg) scaleY(1.5);
+            box-shadow: 0 8px 15px rgba(255, 0, 0); 
+        }
+    </style>
+</head>
+<body>
+        
+    <h1>Css Transformation -  Scale() property</h1>
+    <div class="parent">
+        <div class="box" id="box1">scale-z</div>
+        <div class="box" id="box2">scale-x</div>
+        <div class="box" id="box3">scale-y</div>
+    </div>
+</body>
+</html>
