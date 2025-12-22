@@ -1,0 +1,61 @@
+*{
+    padding:0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    margin: 10px;
+    font-size: 35px;
+    text-align: center;
+}
+.race-track{
+    width: 100%;
+    padding: 10px 0px;
+}
+.raceing-path{
+    width: 90%;
+    height: 80px;
+    border: 3px dashed #000;
+    margin: 50px auto;
+    border-radius: 50px;
+    position: relative;
+}
+
+h2{
+    position:absolute;
+    top: -35px;
+    left: 20px;
+}
+img{
+    position: absolute;
+    left:10px;
+    top: 5px;
+    width: 150px;
+    border-radius: 20px;
+    animation: driveCars 30s forwards;
+}
+
+@keyframes driveCars {
+    from{
+        left: 10px;
+    }
+    to{
+        left: calc(90% - 10px);
+    } 
+}
+
+.raceing-path:nth-child(1) img{
+    animation-timing-function: linear;
+}
+.raceing-path:nth-child(2) img{
+    animation-timing-function: ease;
+}
+.raceing-path:nth-child(3) img{
+    animation-timing-function: ease-in;
+}
+.raceing-path:nth-child(4) img{
+    animation-timing-function: ease-in-out;
+}
+.raceing-path:nth-child(5) img{
+    animation-timing-function: ease-out;
+}
