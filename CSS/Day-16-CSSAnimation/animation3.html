@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h1{
+            text-align: center;
+            margin: 20px;
+        }
+        .earth{
+            height: 400px;
+            width: 400px;
+            border: 1px solid gray;
+            border-radius: 50%;
+            margin: 50px auto;
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/The_Blue_Marble%2C_AS17-148-22727.jpg/1200px-The_Blue_Marble%2C_AS17-148-22727.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 120%;
+            background-position: center;
+            animation: rotateEarth 5s linear infinite;
+        }
+        @keyframes rotateEarth {
+            from{
+                transform: rotate(0deg);
+            }to{
+                transform: rotate(360deg);
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Earth Roataing Demo by using Animation</h1>
+    <div class="earth"></div>
+</body>
+</html>
