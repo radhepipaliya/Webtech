@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h1{
+            text-align: center;
+            margin: 20px;
+        }
+        .parent{
+            width: 90%;
+            height: 600px;
+            border-bottom: 2px solid gray;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-end;
+        }
+        .ball{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: navy;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            animation: bouncingBalls 1s linear infinite;
+            animation-direction: alternate;
+        }
+        #ball2{
+            animation-delay: 0.3s;
+        }
+        #ball3{
+            animation-delay: 0.6s;
+        }
+        #ball4{
+            animation-delay: 0.9s;
+        }
+        #ball5{
+            animation-delay: 1.2s;
+        }
+
+        @keyframes bouncingBalls 
+        {
+            from{
+                transform: translateY(0px);
+            }
+            to{
+                transform: translateY(-500px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>BOuncing Balls Animation Demo</h1>
+    <div class="parent">
+        <div class="ball" id="ball1">1</div>
+        <div class="ball" id="ball2">2</div>
+        <div class="ball" id="ball3">3</div>
+        <div class="ball" id="ball4">4</div>
+        <div class="ball" id="ball5">5</div>
+    </div>
+</body>
+</html>
