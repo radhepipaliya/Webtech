@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: "BBH Bartle", sans-serif;;
+        }
+        body{
+            background-color: black;
+        }
+        h1{
+            font-size: 40px;
+            margin: 30px;
+            color: white;
+            text-align: center;
+        }
+        .parent{
+            width: 90%;
+            height: 75vh;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            overflow: hidden;
+        }
+        .child{
+            flex-basis: 10%;
+            height:90%;
+            border-radius:10px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transition: all 1s linear;
+        }
+        h2{
+            text-align: center;
+            margin: 10px;
+            transition: all 0.2s linear;
+            opacity: 0;
+        }
+
+        .child:hover{
+            flex-grow: 0.5;
+            transform: scale(1.02);
+            h2{
+                opacity: 1;
+            }
+        }
+        .child:nth-child(1){
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE09zC3x8Vtx5aVI2bkoAGhqfiOQklC35rHg&s);
+        }
+        .child:nth-child(2){
+            background-image: url(https://images.unsplash.com/photo-1571822325911-c01620a65e86?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z3JlYXQlMjB3YWxsJTIwb2YlMjBjaGluYXxlbnwwfHwwfHx8MA%3D%3D);
+        }
+         .child:nth-child(3){
+            background-image: url(https://images.unsplash.com/photo-1634196243663-71cc3a1c639a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29sb3NzZXVtfGVufDB8MXwwfHx8MA%3D%3Dhttps://worldtoptop.com/wp-content/uploads/2011/09/christ_redeemer.jpg);
+        }
+        .child:nth-child(4){
+            background-image: url(https://worldtoptop.com/wp-content/uploads/2011/09/christ_redeemer.jpg);
+        }
+         .child:nth-child(5){
+            background-image: url(https://www.tastingsunsets.com/wp-content/uploads/2025/09/Chichen-Itza-4-683x1024.jpg);
+        }
+        .child:nth-child(6){
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Q1ZAtY9HfsgppM2-5H1Sd_L9xa0iSIZ8cQ&s);
+        }
+         .child:nth-child(7){
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBbSfnR6M___g6hqzpQnUwojdgYMLo_TXiSg&s);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>7 Wonder of World</h1>
+    <div class="parent">
+        <div class="child"><h2>The Taj Mahal</h2></div>
+        <div class="child"><h2>The Great Wall of China</h2></div>
+        <div class="child"><h2>The Colosseum</h2></div>
+        <div class="child"><h2>The Christ the redeemer</h2></div>
+        <div class="child"><h2>THe Chichen Itza</h2></div>
+        <div class="child"><h2>the petra</h2></div>
+        <div class="child"><h2>The Machu Pichuu</h2></div>
+    </div>
+</body>
+</html>
