@@ -30,3 +30,20 @@ function greetPerson(name,name2) {
 
 greetPerson("abx" ,"aby");
 
+//! return keyword or statement in function?
+//* THe return keyword is used to return the value back to the caller (FCS) for futher use.
+
+function sum(num1,num2){
+let result = num1 +num2;
+return result;
+}
+
+//! 1st way:
+//? If the function is returning any value to the function call statement and if you wwant to access it then store inside any variable and print that variable.
+
+let output = sum(7,18);
+console.log(output);
+
+//! 2nd Way:
+//? If the function is returning any value to the function call statement and if you want to access it then directly call the FCS inside the clg.
+console.log(sum(7,18)); 

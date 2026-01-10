@@ -10,7 +10,7 @@ console.log("DataType")
 //* Primitive datatypes are the inbuilt datatypes which is provided by the language itself.
 //* It can capable to store only Single Value or data.
 
-//? There are 7 types of primitie dt in JS:
+//? There are 7 types of primitive dt in JS:
 //~ 1. number
 //~ 2. string
 //~ 3. boolean
@@ -33,15 +33,15 @@ console.log(typeof num)
 
 //! 2. String:
 //* The String the a colletion of Characters:
-//? Characters: a-z, A-Z, 0-9, Special CHaracters(!,$,%,^,_), whitespace character.
+//? Characters: a-z, A-Z, 0-9, Special Characters(!,$,%,^,_), whitespace character.
 
 //* There are 3 ways to creat the string in JS:
-//? 1. BY Using qotes(" ")
+//? 1. By Using quotes(" ")
 let str ="Hello World";
 console.log(str);
 console.log(typeof str);
 
-//? 2. BY Using qotes(' ')
+//? 2. By Using quotes(' ')
 let str2 ="Hello World";
 console.log(str2);
 console.log(typeof str2);

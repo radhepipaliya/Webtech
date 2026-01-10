@@ -16,7 +16,7 @@ console.log(num1 == num2); // true
 
 console.log(num1===num2); // false
 
-//! String Concentation Operators: (+)
+//! String Concatenation Operators: (+)
 let firstName = "Baburao";
 let middleName = "Ganapatrao";
 let lastName = "Apate";
@@ -35,10 +35,10 @@ let statusCode = 200;
 let result = statusCode === 200 ? "ok":"Not Ok";
 console.log(result);
 
-//! Nullish Coleasing Operators:
-//* The Nullsih Coeasing Operators is used to provide the default value only when the value is null or undefied.
-//* IT is represented by the??
-//* If the value is valid value then defalut value will not be executed.
+//! Nullish Coalescing Operator:
+//* The Nullish Coalescing Operator is used to provide a default value only when the value is null or undefined.
+//* It is represented by the ??
+//* If the value is valid value then default value will not be executed.
 
 let age =0;
 let str ="";
