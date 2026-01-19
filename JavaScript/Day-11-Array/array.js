@@ -117,3 +117,19 @@ console.log(nestedArr);
 console.log(nestedArr.flat(2));
 
 //? 13. find():
+//* Syntax: arr.find(callback_fun)
+
+let users =[
+    { id: 101, name: "john" },
+    { id: 102, name: "Radhe" },
+    { id: 101, name: "Sneh" },
+    
+];
+
+console.log(users);
+
+let userDetails2 = users.find((users) => {
+    return users.name == "john";
+})
+
+console.log(userDetails2);
