@@ -57,3 +57,35 @@ employee.eISCommitted = true;
 
 delete employee.eISCommitted;
 cosnole.log(employee);
+
+
+//! How to access the array elements in an object:
+let student = {
+    sName: "Kanu",
+    sAge: 16,
+    sSkills: ["HTMLS","CSS","Python","JS"],
+};
+
+console.log(student.sSkills[3]);
+
+
+//! What is Method in object?
+//* A simple javascript function which is stored inside in key of an object is called as method of an object.
+
+let laptop ={
+    brand: "Asusu",
+    modal: "TUF-F15",
+    ram: "8gb",
+    ssd: "512gb",
+
+    // gaming : function () {
+    //     cosnole.log("But I have never played any game on this pc.");
+    // },
+
+    gaming(){
+        console.log("But I have never played any game game on this pc.");
+    },
+};
+
+console.log(laptop);
+laptop.gaming();
