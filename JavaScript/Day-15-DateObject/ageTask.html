@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Document</title>
+    <link rel="stylesheet" href="./age.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>Age Calculator</h1>
+        <div class="input-group">
+            <label for="dob"> Select Your Date of Birth</label>
+            <input type="date" id="dob"/>
+        </div>
+        <button onclick="calculateAge()">calculateAge</button>
+    </div>
+    <script>
+        function calculateAge(){
+            let userDob = Document.getElementById("dob").value;
+            // cosole.log(userdob);
+
+            let userDate = new Date(userDob);
+            // console.log(userDate);
+
+            let userYear = userDate.getFullYear();
+            //console.log(userYear);
+
+            let todayDate = new Date();
+            let todayYear = todayDate.getFullYear();
+
+            if(todayYear < userYear){
+                alert("Enter valid Year!");
+            } else{
+                let age = todayYear - userYear;
+                console.log(age);
+                document.getElementById("displayAge").innerText = 'Your Age is: ${age}';
+            }
+        }   
+    </script>
+</body>
+</html>
