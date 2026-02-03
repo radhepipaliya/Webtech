@@ -60,5 +60,48 @@ htmlToArrayBySpread.forEach((paras) =>{
     paras.style.color ="teal";
 });
 //? 3. document.getElementsByTagName():
+//* The document.getElementsByTagName() method is used is used to access the multiple HTML elements by their specific tag name.
+//& Return type: HTMLCollection
+let allparas = document.getElementsByTagName("P");
+console.log(allParas);
+
 
 //? 4. document.getElementsByName():
+//* The document.getElementByName() Method is used to access the HTML elements by their specific name value.
+//? Syntax: document.getElementByName("name-value");
+//& Return Type: NodeList []
+
+//! What is NodeList?
+//* THe NodeList is a collection different types of node such as text node, element node, attribute node, comment node, etc.
+//~ By default NodeList supports the forEach() method but doesn't support the map() method.
+
+let genders = document.getElementsByName("gender");
+console.log(genders);
+console.log(Array.isArray(genders)); //false
+
+genders.forEach((gender,index)=> {
+    if(index === 0){
+        gender.style.accentColor = "red";
+        gender.checked = true;
+    }
+});
+
+//? 5. document.querySelector():
+//* The document.querySelector() method is used to access the first matching elemnt by their specific css selector.
+//? Syntax: document.querySelector("css-selector")
+//& Return Type: First Matching Css - Element
+
+let classPara = document.querySelector(".para");
+console.log(classPara);
+
+//? 6. document.querySelectorAll():
+//* The document.querySelectorAll() method is used to access the all matching element by their specific css selector.
+//? Syntax:document.querySelectorAll("Css-Selector")
+//& Return Type: NodeList[]
+
+let allPArasEle = document.querySelectorAll(".para");
+console.log(allParasEle);
+
+//~ Final Summary:
+//? 1. HTML Collection -> getElementsByClassName() & getElementsByTagName()
+//? 2. Node List -> getElementByName() & querySelectorAll()
