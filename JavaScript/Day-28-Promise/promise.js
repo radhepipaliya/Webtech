@@ -41,26 +41,26 @@ console.log("Promise in JS");
 //! What is callback hell?
 //* Callback hell happens when you have multiple asynchronous operation that depend on each other and you nest callbacks inside callbacks inside callbacks.
 
-function getUser(id,callback){
-    setTimeout(()=>{
-        let user = {id:id, name:"John",role:"user"};
-        callback(user);
-    },1000);
-}
+// function getUser(id,callback){
+//     setTimeout(()=>{
+//         let user = {id:id, name:"John",role:"user"};
+//         callback(user);
+//     },1000);
+// }
 
-function addToCart(user,callback){
-    setTimeout(()=>{
-        let orders =["Order-1","order-2"];
-        callback(orders);
-    },2000);
-}
+// function addToCart(user,callback){
+//     setTimeout(()=>{
+//         let orders =["Order-1","order-2"];
+//         callback(orders);
+//     },2000);
+// }
 
-function orderDetails(order,callback){
-    setTimeout(() => {
-        let orderInfo = {product:order,price:500};
-        callback(orderInfo);
-    },3000);
-}
+// function orderDetails(order,callback){
+//     setTimeout(() => {
+//         let orderInfo = {product:order,price:500};
+//         callback(orderInfo);
+//     },3000);
+// }
 
 // let data = getUser(1,function(user){
 //     console.log("User:",user);
@@ -73,22 +73,63 @@ function orderDetails(order,callback){
 //     });
 // });
 
-//! Promise Chaining:
-let fun = getUser(1);
-console.log(fun);
-fun
-  .then((user) => {
-    console.log(user);
-    return addToCart(user);
-  })
-  .then((orders) => {
-    console.log(orders);
-    return orderDetails(orders[0]);
-  })
-  .then((orderInfo) => {
-    console.log(orderInfo);
-    console.log("order Completed");
-  })
-  .catch((error) => {
-    console.log("Something went wrong:", error);
+function getUser(id) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve({ id: id, name: "John", role: "user" });
+    }, 1000);
   });
+}
+
+function addToCart(user) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(["Order-1", "Order-1"]);
+    }, 2000);
+  });
+}
+
+function orderDetails(order) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve({ product: order, price: 500 });
+    }, 3000);
+  });
+}
+
+// ! Promise Chaining:
+// let fun = getUser(1);
+// console.log(fun);
+// fun
+//   .then((user) => {
+//     console.log(user);
+//     return addToCart(user);
+//   })
+//   .then((orders) => {
+//     console.log(orders);
+//     return orderDetails(orders[0]);
+//   })
+//   .then((orderInfo) => {
+//     console.log(orderInfo);
+//     console.log("order Completed");
+//   })
+//   .catch((error) => {
+//     console.log("Something went wrong:", error);
+//   });
+
+  //! Promise Handling by using async/ await keyword:
+
+  async function  handlePromise(){
+    try{
+      let user = await getUser(1);
+      let orders = await addToCart(user);
+      let orderInfo = await orderDetails(orders[0]);
+      console.log(user);
+      console.log(orders);
+      console.log(orderInfo);
+    }catch{
+      console.log(error);
+    }
+  }
+
+  handlePromise();
